@@ -26,7 +26,6 @@ class Tagger:
          (r'^\S+ել$|^\S+ալ$|^\S+մ$|^\S+ս$|^\S+ի$|^\S+նք$|^\S+ք$|^\S+ն$|^\S+ի$|^\S+իր$|^\S+ր$','VB'),
          (r'ինք$|իք$|^\S+ին$|^\S+իր$|^\S+ա$|^\S+ու$|^\S+եք$|^կ\S+$','VB')
         ])
-        #unigram_tagger = nltk.UnigramTagger(self.tagged_train_sents)
         unigram_tagger = nltk.UnigramTagger(self.tagged_train_sents, backoff = regex_tagger)
         bigram_tagger = nltk.BigramTagger(self.tagged_train_sents, backoff = unigram_tagger)
 
@@ -50,7 +49,6 @@ class Tagger:
                     continue
                 else:
                     tagged_sent.append(tuple(tagged_word)) 
-                #tagged_sent.append(tuple(tagged_word)) 
         return tagged_sent
            
     def evaluate(self,tagged_gold_sents):
