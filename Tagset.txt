@@ -1,0 +1,19 @@
+1. ADP 		adpositions
+2. ABV		abbreviations
+3. CC 		conjunction
+4. CD 		number
+5. IN 		preposition
+6. JJ		adjective
+7. NN		noun
+8. NP 		noun, proper
+9. PP		pronoun
+10. PRP 	participle
+11. P		punctuation
+12. RB		adverb
+13. VB 		verb
+14. VAOR	aorist, verb
+15. VAUX	auxiliary verb
+16. UH 		interjection
+17. OP		other punctuation
+
+
